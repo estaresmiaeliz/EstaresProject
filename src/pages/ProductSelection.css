@@ -1,0 +1,332 @@
+/* 🌷 Garden Gatherings Theme
+    Palette: lilac 💜, mint 💚, peach 🍑, white 🤍
+    Font: Quicksand or Nunito
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+.gg-selection {
+    font-family: "Quicksand", sans-serif;
+    background-color: #fffdfd;
+    color: #4a235a;
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* 🌿 Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b388eb; /* lilac */
+    padding: 18px 40px;
+    color: white;
+    border-bottom: 5px solid #f8bbd0; /* soft pink */
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-purple {
+    background-color: #9575cd;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn-purple:hover {
+    background-color: #7e57c2;
+}
+
+.show-btn {
+    background-color: #f48fb1; /* pink */
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.show-btn:hover {
+    background-color: #ec407a;
+    transform: scale(1.05);
+}
+
+/* 🌸 Section Titles */
+.rooms h3,
+.addons h3,
+.meals h3 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* 🌼 Room Cards */
+.room-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.room-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 270px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.room-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 15px;
+}
+
+.room-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4a235a;
+}
+
+.room-price {
+    color: #9c27b0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.room-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.room-controls button {
+    background-color: #b388eb;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.room-controls button:hover {
+    background-color: #ab47bc;
+}
+
+.qty {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* 🍑 Total Bar */
+.total-bar {
+    background-color: #f3e5f5;
+    color: #4a235a;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 🌸 Add-ons Section */
+.addons-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.addon-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 220px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.addon-card:hover {
+    transform: translateY(-5px);
+}
+
+.addon-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.addon-info {
+    padding: 12px;
+}
+
+.addon-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.addon-controls button {
+    background-color: #aed581; /* mint */
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addon-controls button:hover {
+    background-color: #8bc34a;
+}
+
+/* 🪴 Meals Section */
+.meals-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.meals-left label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #6a1b9a;
+}
+
+.meals-left input {
+    padding: 6px;
+    border-radius: 8px;
+    border: 2px solid #d1c4e9;
+    width: 150px;
+    text-align: center;
+}
+
+.meals-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.meal-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f5ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.meal-line input {
+    width: 60px;
+    border: 2px solid #ce93d8;
+    border-radius: 8px;
+    text-align: center;
+    padding: 3px;
+}
+
+/* 🌸 Section Divider */
+.section-divider {
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(to right, #f8bbd0, #b388eb);
+    margin: 40px auto;
+    border-radius: 50px;
+}
+
+/* 💜 Grand Total */
+.grand-total {
+    text-align: center;
+    background: linear-gradient(to right, #f8bbd0, #b388eb);
+    color: white;
+    font-weight: bold;
+    padding: 25px 0;
+    font-size: 1.2rem;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grand-figure {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/* 🌸 Floating Flower Animation (Playful Floral Touch) */
+.floating-flower {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+    z-index: 1;
+    pointer-events: none;
+    animation: floatAnimation 18s infinite linear;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+/* Slight speed variation for each petal */
+.f1 { left: 5%; animation-duration: 22s; width: 50px; }
+.f2 { left: 20%; animation-duration: 18s; width: 70px; }
+.f3 { left: 45%; animation-duration: 20s; width: 40px; }
+.f4 { left: 65%; animation-duration: 25s; width: 80px; }
+.f5 { left: 85%; animation-duration: 19s; width: 60px; }

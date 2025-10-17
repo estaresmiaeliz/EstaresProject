@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --lilac: #c9a9ff;
+  --mint: #b6f0d9;
+  --peach: #ffd5b0;
+  --white: #ffffff;
+  --purple-btn: #7b3fbf;
+  --text: #3a3a3a;
+}
+
+/* 🌸 Full-page background */
+.gg-landing {
+  position: relative;
+  min-height: 100vh;
+  background: url("/images/bg.jpg") no-repeat center center/cover; /* your floral bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+/* ✨ Hero container */
+.hero {
+  display: flex;
+  gap: 24px;
+  padding: 36px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* 🌿 Left section with image & card */
+.hero-left {
+  position: relative;
+  width: 45%;
+  min-width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-cta {
+  position: absolute;
+  left: 34px;
+  bottom: 28px;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.card-cta h1 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--purple-btn);
+}
+
+.card-cta .subtitle {
+  margin: 8px 0 12px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 🌷 Button */
+.btn-primary {
+  background-color: var(--purple-btn);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #9b5cd6;
+  transform: scale(1.05);
+}
+
+/* 🌼 Right info section */
+.hero-right {
+  width: 50%;
+  min-width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: auto;
+}
+
+.info h2 {
+  background-image: url("/images/flower4.png"); /* optional decorative flower behind title */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: var(--purple-btn);
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 100px 0;
+}
+
+.info p {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* 🌸 Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    min-width: unset;
+    height: 360px;
+  }
+  .card-cta {
+    left: 20px;
+    bottom: 20px;
+    width: 85%;
+  }
+}
+/* Slight speed variation for each petal */
+.f1 { left: 5%; animation-duration: 22s; width: 50px; }
+.f2 { left: 20%; animation-duration: 18s; width: 70px; }
+.f3 { left: 45%; animation-duration: 20s; width: 40px; }
+.f4 { left: 65%; animation-duration: 25s; width: 80px; }
+.f5 { left: 85%; animation-duration: 19s; width: 60px; }
